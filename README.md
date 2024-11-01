@@ -1,85 +1,56 @@
-# 🌟 **Tópicos em Estruturas de Dados** 🌟
+# Tópicos em Estruturas de Dados
 
----
+Bem-vindo ao repositório da disciplina **Tópicos em Estruturas de Dados**! Neste curso, exploraremos conceitos avançados de estruturas de dados, com foco especial em ponteiros e sua aplicação na linguagem C.
 
-## 🏢 **Sobre a Disciplina**
+## Objetivos do Curso
 
-Bem-vindo ao repositório da disciplina **Tópicos em Estruturas de Dados**! Neste curso, exploraremos conceitos fundamentais de estruturas de dados, com ênfase em **ponteiros** e suas aplicações na linguagem **C**.
+- Compreender a importância e o funcionamento dos ponteiros em C.
+- Aprender a manipular diferentes estruturas de dados, como listas encadeadas, árvores e grafos, utilizando ponteiros.
+- Desenvolver habilidades para escrever código eficiente e seguro.
 
-Nosso objetivo é capacitar os alunos a manipularem eficientemente diferentes estruturas de dados e a desenvolverem habilidades críticas para a programação.
+## Conteúdo Abordado
 
----
+1. **Introdução a Ponteiros**
+   - O que são ponteiros?
+   - Como declarar e inicializar ponteiros.
+   - Operadores de desreferenciação e endereçamento.
 
-## 🚀 **Conteúdo Abordado**
+2. **Estruturas de Dados Fundamentais**
+   - Listas Encadeadas
+   - Pilhas e Filas
+   - Árvores Binárias
 
-- 🧠 **Introdução a Ponteiros**: O que são e como utilizá-los.
-- 📚 **Estruturas de Dados**:
-  - 🔗 Listas Encadeadas
-  - 📦 Pilhas e Filas
-  - 🌳 Árvores Binárias
-- ⚙️ **Manipulação de Memória**: Alocação dinâmica e gestão de memória.
-- 📊 **Algoritmos Avançados**: Tabelas de hash e grafos.
-- 🛠️ **Projetos Práticos**: Aplicações práticas utilizando as estruturas estudadas.
+3. **Manipulação de Memória**
+   - Alocação dinâmica de memória (malloc, calloc, free).
+   - Gestão de memória e vazamentos.
 
----
+4. **Algoritmos e Estruturas de Dados Avançados**
+   - Tabelas de Hash
+   - Grafos e suas representações.
 
-## 🛠 **Tecnologias Utilizadas**
+5. **Projetos Práticos**
+   - Desenvolvimento de aplicações que utilizam as estruturas estudadas.
+   - Trabalhos em grupo para resolver problemas complexos.
 
-As principais tecnologias usadas neste curso incluem:
+## Requisitos
 
-![C](https://img.shields.io/badge/-C-A8B400?logo=c&logoColor=white&style=for-the-badge)
-![Makefile](https://img.shields.io/badge/-Makefile-000000?logo=makefile&logoColor=white&style=for-the-badge)
+- Conhecimento básico em programação C.
+- Familiaridade com conceitos de algoritmos e estruturas de dados.
 
----
+## Como Contribuir
 
-## 👥 **Contribuidores**
+Contribuições são bem-vindas! Sinta-se à vontade para criar issues ou pull requests com melhorias, correções ou sugestões.
 
-<table>
-     <tr>
-          <td align="center">
-               <a href="https://github.com/rafael">
-                    <img src="https://avatars.githubusercontent.com/rafael" width="100px;" alt="Rafael"/>
-                    <br />
-                    <sub>
-                         <b>
-                              Rafael
-                         </b>
-                    </sub>
-               </a>
-          </td>
-          <td align="center">
-               <a href="https://github.com/luca">
-                    <img src="https://avatars.githubusercontent.com/luca" width="100px;" alt="Luca"/>
-                    <br />
-                    <sub>
-                         <b>
-                              Luca
-                         </b>
-                    </sub>
-               </a>
-          </td>
-          <td align="center">
-               <a href="https://github.com/leonardo">
-                    <img src="https://avatars.githubusercontent.com/leonardo" width="100px;" alt="Leonardo"/>
-                    <br />
-                    <sub>
-                         <b>
-                              Leonardo
-                         </b>
-                    </sub>
-               </a>
-          </td>
-     </tr>
-</table>
+## Recursos Adicionais
 
----
+- [Documentação da Linguagem C](https://en.cppreference.com/w/c)
+- [Livro: "C Programming Language" - Brian Kernighan e Dennis Ritchie](https://en.wikipedia.org/wiki/The_C_Programming_Language)
+- [Tutorial de Estruturas de Dados](https://www.geeksforgeeks.org/data-structures/)
 
-## 📞 **Contato**
+## Contato
 
 Para dúvidas e sugestões, entre em contato com o professor [Nome do Professor] pelo e-mail [email@exemplo.com].
 
 ---
 
-Vamos juntos explorar o fascinante mundo das estruturas de dados! 💻✨
-
-## **Atenciosamente, a equipe de Tópicos em Estruturas de Dados!**
+Vamos juntos explorar o fascinante mundo das estruturas de dados!
