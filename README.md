@@ -47,10 +47,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para criar issues ou pull r
 - [Livro: "C Programming Language" - Brian Kernighan e Dennis Ritchie](https://en.wikipedia.org/wiki/The_C_Programming_Language)
 - [Tutorial de Estruturas de Dados](https://www.geeksforgeeks.org/data-structures/)
 
-## Contato
-
-Para dúvidas e sugestões, entre em contato com o professor [Nome do Professor] pelo e-mail [email@exemplo.com].
-
 ---
-
-Vamos juntos explorar o fascinante mundo das estruturas de dados!
