@@ -1,0 +1,108 @@
+#include <stdio.h>
+#include <stdlib.h>
+//digitei errado na hora do ctrl+f, gostei e deixei, mas filha = pilha 👍  
+//e nao consegui/precisei uasr a funcao lenght pq o jeito q o japones tinha feito ja salvava nois, mas ela ta comentada ai👍👍 
+// Estrutura para representar uma filha
+typedef struct {
+    void **dados;      // Ponteiro genérico para armazenar os elementos da filha
+    int inicio;        // Índice do primeiro elemento na filha 
+    int fim;           // Índice do último elemento na filha
+    int tamanho;       // Número atual de elementos na filha
+    int capacidade;    // Capacidade total da filha
+} Filha;
+
+// //funcao para saber o "tamanho ocupado" da pilha
+// int length(Pilha *Pilha) {
+//     return sizeof(pilha->dados) / sizeof(pilha->dados[0]); 
+// }
+
+// Função para criar uma filha com capacidade inicial
+Filha* criarFilha(int capacidadeInicial) {
+    Filha *filha = (Filha *) malloc(sizeof(Filha)); // Aloca memória para a filha
+    if (filha == NULL) return NULL; // Verifica se a alocação falhou
+
+    // Aloca memória para os dados da filha
+    filha->dados = (void **) malloc(sizeof(void *) * capacidadeInicial);
+    filha->inicio = 0; // Inicializa o índice de início
+    filha->fim = -1;   // Inicializa o índice de fim
+    filha->tamanho = 0; // Inicializa o tamanho da fila
+    filha->capacidade = capacidadeInicial; // Define a capacidade da fila
+
+    return filha; // Retorna a filha criada
+}
+
+// Função para limpar a filha e liberar a memória
+void limparFilha(Filha *filha) {
+    if (filha != NULL) {
+        free(filha->dados); // Libera a memória dos dados
+        free(filha); // Libera a memória da estrutura da filha
+    }
+}
+
+// Função para dobrar a capacidade da filha
+void dobrarCapacidade(Filha *filha) {
+    int newCapacidade = filha->capacidade * 2; // Nova capacidade
+    void **a = (void **) malloc(sizeof(void*) * newCapacidade); // Aloca nova memória para os dados
+
+    // Copia os elementos existentes para a nova estrutura
+    for (int i = 0; i < filha->tamanho; i++) {
+        a[i] = filha->dados[i];
+    }
+
+    free(filha->dados); // Libera a memória da antiga estrutura
+    filha->dados = a; // Atualiza o ponteiro para os novos dados
+    filha->capacidade = newCapacidade; // Atualiza a capacidade
+    filha->inicio = 0; // Reinicializa o índice de início
+    filha->fim = fila->tamanho - 1; // Atualiza o índice de fim
+}
+
+// Função para inserir um elemento na fila
+void inserirNaFilha(Filha *filha, void *e) {
+    if (filha->tamanho == filha->capacidade) { // Verifica se a filha está cheia
+        dobrarCapacidade(filha); // Dobra a capacidade se necessário
+    }
+
+    filha->fim++; // Move o índice do fim para a parte de cima da pilha
+    filha->dados[filha->fim] = e; // Insere o novo elemento 
+    filha->tamanho++; // Incrementa o tamanho da filha
+}
+
+// Função para remover um elemento da filha
+void* removerDaFilha(Filha *filha) {
+    if (filha->tamanho == 0) {
+        return NULL; // Retorna NULL se a filha estiver vazia
+    }
+
+    void *e = filha->dados[filha->fim]; // Armazena o elemento a ser removido, q antes era o inicio agr e o fim
+    filha->fim--; // Move o índice de cima para baixo
+    filha->tamanho--; // Decrementa o tamanho da filha
+    return e; // Retorna o elemento removido
+}
+
+// Função para mostrar os elementos na filha
+void mostrarFilha(Filha *filha) {
+    printf("Elementos na filha: ");
+    for (int i = 0; i <= filha->fim; i++) {
+        int valor = *(int *)filha->dados[i]; // Acessa o valor
+        printf("%d ", valor); // Imprime o valor
+    }
+    printf("\n");
+}
+
+// Função principal para testar a filhaInsere
+int main() {
+    Filha* filha = criarFilha(2); // Cria uma filha com capacidade inicial de 2
+    int a = 3, b = 2, c = 1; // Define alguns valores inteiros
+    inserirNaFilha(filha, &a); // Insere 'a' na filha
+    inserirNaFilha(filha, &b); // Insere 'b' na filha
+    printf("Capacidade antes de dobrar: %d\n", filha->capacidade); // Mostra a capacidade atual
+    mostrarFilha(filha); // Exibe os elementos na filha
+    inserirNaFilha(filha, &c); // Insere 'c', o que provoca a dobra da capacidade
+    printf("Capacidade depois de dobrar: %d\n", filha->capacidade); // Mostra a nova capacidade
+    mostrarFilha(filha); // Exibe os elementos na filha
+    int *removido = (int *)removerDaFilha(filha); // Remove um elemento da fila
+    printf("Elemento removido: %d\n", *removido); // Mostra o elemento removido
+    mostrarFilha(filha); // Exibe os elementos restantes na filha
+    limparFilha(filha); // Limpa a filha e libera a memória
+    return 0; // Retorna 0, indicando que o programa terminou com sucesso
+}
