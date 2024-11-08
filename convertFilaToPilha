@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 //digitei errado na hora do ctrl+f, gostei e deixei, mas filha = pilha 👍  
-//e nao consegui/precisei uasr a funcao lenght pq o jeito q o japones tinha feito ja salvava nois, mas ela ta comentada ai👍👍 
+//nao consegui/precisei uasr a funcao lenght pq o jeito q o japones tinha feito ja salvava nois, mas ela ta comentada ai👍👍 
+//e so para lembrar que eu fiz com o Matheus e com a Isa
 // Estrutura para representar uma filha
 typedef struct {
     void **dados;      // Ponteiro genérico para armazenar os elementos da filha
