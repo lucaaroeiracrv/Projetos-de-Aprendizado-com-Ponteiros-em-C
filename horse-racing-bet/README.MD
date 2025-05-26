@@ -23,7 +23,7 @@ Um jogo de corrida de cavalos feito em C, onde você aposta em qual cavalo será
 
 ### 1. Pré-requisitos
 
-- Ter o [GCC](https://github.com/niXman/mingw-builds-binaries/releases) (x86_64-15.1.0-release-posix-seh-msvcrt-rt_v12-rev0.7z) instalado (ou outro compilador C para Windows).
+- Ter o [GCC](https://github.com/niXman/mingw-builds-binaries/releases/download/15.1.0-rt_v12-rev0/x86_64-15.1.0-release-posix-seh-msvcrt-rt_v12-rev0.7z) instalado (ou outro compilador C para Windows).
 - Ter o terminal (Prompt de Comando ou PowerShell).
 
 ### 2. Baixe o projeto
